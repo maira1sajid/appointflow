@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import Logo from "@/components/ui/Logo";
 import CurrentYear from "@/components/ui/CurrentYear";
 import SocialLinks from "@/components/ui/SocialLinks";
@@ -47,7 +48,7 @@ export default function Footer() {
 
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 sm:flex-row">
           <p className="text-xs text-brand-100/60">
-            © <CurrentYear /> AppointFlow. All rights reserved.
+            © <Suspense fallback="2026"><CurrentYear /></Suspense> AppointFlow. All rights reserved.
           </p>
           <div className="flex gap-6 text-xs text-brand-100/60">
             <a href="/terms" className="hover:text-accent-400">
