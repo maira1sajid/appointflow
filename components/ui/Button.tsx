@@ -7,6 +7,7 @@ type ButtonProps = {
   variant?: "primary" | "secondary" | "ghost" | "outline-light";
   size?: "sm" | "md" | "lg";
   className?: string;
+  onClick?: () => void;
 };
 
 const variantStyles: Record<NonNullable<ButtonProps["variant"]>, string> = {
@@ -31,10 +32,12 @@ export default function Button({
   variant = "primary",
   size = "md",
   className = "",
+  onClick,
 }: ButtonProps) {
   return (
     <Link
       href={href}
+      onClick={onClick}
       className={`inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-all duration-200 ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
     >
       {children}
