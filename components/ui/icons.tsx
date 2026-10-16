@@ -232,6 +232,127 @@ export function LogoutIcon(props: SVGProps<SVGSVGElement>) {
   );
 }
 
+export function PlusIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.2} {...props}>
+      <path d="M12 5v14M5 12h14" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+export function CameraIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} {...props}>
+      <path
+        d="M4 8.5A1.5 1.5 0 015.5 7h2l1-2h7l1 2h2A1.5 1.5 0 0120 8.5v9A1.5 1.5 0 0118.5 19h-13A1.5 1.5 0 014 17.5v-9z"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <circle cx="12" cy="13" r="3.5" />
+    </svg>
+  );
+}
+
+export function ClockIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} {...props}>
+      <circle cx="12" cy="12" r="8.5" />
+      <path d="M12 7.5V12l3 2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+export function UsersIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} {...props}>
+      <circle cx="9" cy="8.5" r="3" />
+      <path d="M3.5 20c0-3 2.5-5.5 5.5-5.5s5.5 2.5 5.5 5.5" strokeLinecap="round" />
+      <circle cx="17" cy="8.5" r="2.4" />
+      <path d="M15.5 14.7c2.6.3 4.5 2.6 4.5 5.3" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+export function ClipboardIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} {...props}>
+      <rect x="5" y="4.5" width="14" height="16" rx="2.5" />
+      <path d="M9 4.5V3.5a1 1 0 011-1h4a1 1 0 011 1v1" strokeLinecap="round" />
+      <path d="M8.5 11h7M8.5 14.5h7M8.5 18h4.5" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+export function EditIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} {...props}>
+      <path
+        d="M16.5 4.5l3 3L8 19H5v-3L16.5 4.5z"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+export function PakistanFlagIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 28 20" {...props}>
+      <rect width="28" height="20" rx="2" fill="#01411C" />
+      <rect width="7" height="20" fill="#ffffff" />
+      <circle cx="18.5" cy="10" r="5" fill="#ffffff" />
+      <circle cx="20" cy="10" r="4.1" fill="#01411C" />
+      <polygon
+        points="22.8,10 21.3,10.5 20.6,11.9 20.1,10.4 18.6,10.1 19.9,9.2 19.7,7.7 21,8.6 22.4,8 21.9,9.5"
+        fill="#ffffff"
+      />
+    </svg>
+  );
+}
+
+export function ScissorsIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} {...props}>
+      <circle cx="6" cy="6" r="2.5" />
+      <circle cx="6" cy="18" r="2.5" />
+      <path d="M20 5L8 13M20 19L8 11" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+export function ToothIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} {...props}>
+      <path
+        d="M12 3c-2.8 0-5 1.6-5 4.3 0 2.3.6 3.3 1 5.5.4 2.1.5 5.2 1.8 5.2 1.4 0 1-4.3 2.2-4.3s.8 4.3 2.2 4.3c1.3 0 1.4-3.1 1.8-5.2.4-2.2 1-3.2 1-5.5C17 4.6 14.8 3 12 3z"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+export function DumbbellIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} {...props}>
+      <path
+        d="M3.5 10v4M6 8v8M18 8v8M20.5 10v4M6 12h12"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+export function BriefcaseIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} {...props}>
+      <rect x="3.5" y="7.5" width="17" height="12" rx="2" />
+      <path d="M8.5 7.5V6a2 2 0 012-2h3a2 2 0 012 2v1.5" strokeLinecap="round" />
+      <path d="M3.5 12.5h17" strokeLinecap="round" />
+    </svg>
+  );
+}
+
 export function ArrowLeftIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} {...props}>
