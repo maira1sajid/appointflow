@@ -2,8 +2,8 @@ import { MailIcon, PhoneIcon, PinIcon } from "@/components/ui/icons";
 
 const items = [
   { Icon: MailIcon, text: "hello@appointflow.com", href: "mailto:hello@appointflow.com" },
-  { Icon: PhoneIcon, text: "+1 (555) 234-7890", href: "tel:+15552347890" },
-  { Icon: PinIcon, text: "120 Market Street, San Francisco, CA", href: "#" },
+  { Icon: PhoneIcon, text: "+92 300 1234567", href: "tel:+923001234567" },
+  { Icon: PinIcon, text: "Islamabad, Pakistan", href: "#" },
 ];
 
 export default function ContactInfo() {

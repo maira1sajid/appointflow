@@ -7,23 +7,15 @@ import FooterLinkGroup from "@/components/ui/FooterLinkGroup";
 
 const company = [
   { label: "About Us", href: "/about" },
-  { label: "Careers", href: "/careers" },
-  { label: "Blog", href: "/blog" },
   { label: "Register a Business", href: "/business/register" },
-];
-
-const resources = [
-  { label: "FAQs", href: "#faqs" },
-  { label: "Help Center", href: "/help" },
-  { label: "Terms & Conditions", href: "/terms" },
-  { label: "Privacy Policy", href: "/privacy" },
+  { label: "FAQs", href: "/faqs" },
 ];
 
 export default function Footer() {
   return (
-    <footer className="bg-ink-900 pt-16 pb-8">
+    <footer className="bg-ink-900 pt-10 pb-6">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
+        <div className="grid gap-8 lg:grid-cols-[1.6fr_1fr]">
           <div>
             <Logo variant="light" />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-brand-100/80">
@@ -35,18 +27,19 @@ export default function Footer() {
             </div>
           </div>
 
-          <FooterLinkGroup title="Company" links={company} />
-          <FooterLinkGroup title="Resources" links={resources} />
+          <div className="grid grid-cols-2 gap-10">
+            <FooterLinkGroup title="Company" links={company} />
 
-          <div>
-            <h4 className="mb-4 text-sm font-bold uppercase tracking-wide text-white">
-              Contact
-            </h4>
-            <ContactInfo />
+            <div>
+              <h4 className="mb-4 text-sm font-bold uppercase tracking-wide text-white">
+                Contact
+              </h4>
+              <ContactInfo />
+            </div>
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 sm:flex-row">
+        <div className="mt-8 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-5 sm:flex-row">
           <p className="text-xs text-brand-100/60">
             © <Suspense fallback="2026"><CurrentYear /></Suspense> AppointFlow. All rights reserved.
           </p>

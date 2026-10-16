@@ -18,6 +18,11 @@ export function validateEmail(value: string): string | undefined {
   if (!EMAIL_RE.test(trimmed)) return "Enter a valid email address";
 }
 
+export function validateOptionalEmail(value: string): string | undefined {
+  if (!value.trim()) return undefined;
+  if (!EMAIL_RE.test(value.trim())) return "Enter a valid email address";
+}
+
 export function validatePakistaniPhone(value: string): string | undefined {
   const digits = value.replace(/\D/g, "");
   if (!digits) return "Phone number is required";

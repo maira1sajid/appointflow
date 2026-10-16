@@ -19,10 +19,26 @@ const highlights = [
 ];
 
 const avatarStack = [
-  { initials: "AC", gradient: "from-brand-500 to-brand-700" },
-  { initials: "DR", gradient: "from-accent-400 to-accent-600" },
-  { initials: "PN", gradient: "from-fuchsia-400 to-brand-600" },
-  { initials: "JL", gradient: "from-emerald-400 to-brand-500" },
+  {
+    image:
+      "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=100&q=80",
+    alt: "Hair salon",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=100&q=80",
+    alt: "Dental clinic",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=100&q=80",
+    alt: "Fitness gym",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=100&q=80",
+    alt: "Consulting office",
+  },
 ];
 
 export default function Hero() {
@@ -77,11 +93,11 @@ export default function Hero() {
 
           <div className="mt-8 flex items-center gap-4">
             <div className="flex -space-x-3">
-              {avatarStack.map((avatar) => (
+              {avatarStack.map((avatar, i) => (
                 <Avatar
-                  key={avatar.initials}
-                  initials={avatar.initials}
-                  gradient={avatar.gradient}
+                  key={i}
+                  image={avatar.image}
+                  alt={avatar.alt}
                   size={36}
                   className="ring-2 ring-brand-700"
                 />
@@ -109,11 +125,11 @@ export default function Hero() {
         <div className="relative mx-auto w-full max-w-md lg:max-w-none">
           <div className="absolute -inset-4 -z-10 rounded-[2.5rem] bg-gradient-to-br from-accent-400/30 via-transparent to-brand-400/20 blur-2xl" />
 
-          <div className="rotate-3 transition-transform duration-500 ease-out hover:rotate-0">
+          <div className="rotate-3">
             <BookingCardMock />
           </div>
 
-          <div className="absolute -left-6 bottom-8 flex items-center gap-3 rounded-2xl bg-white/95 px-4 py-3 shadow-2xl backdrop-blur sm:-left-10">
+          <div className="absolute -left-6 -bottom-6 hidden items-center gap-3 rounded-2xl bg-white/95 px-4 py-3 shadow-2xl backdrop-blur sm:-left-10 sm:flex">
             <div className="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">
               <CheckIcon className="h-5 w-5" />
             </div>
